@@ -4,7 +4,7 @@ from fit_predict import fit_predict
 
 
 eng = pd.read_csv("/Users/otaviolemos/Dropbox/academic/projects/eng-vs-noneng/results/metrics-data/github-550-eng/mlcc_input.file")
-noneng = pd.read_csv("/Users/otaviolemos/Dropbox/academic/projects/eng-vs-noneng/results/metrics-data/github-10k-noneng/mlcc_input.file")
+noneng = pd.read_csv("/Users/otaviolemos/Dropbox/academic/projects/eng-vs-noneng/results/metrics-data/github-10k-neng/mlcc_input.file")
 
 eng['engineered'] = 1
 noneng['engineered'] = 0

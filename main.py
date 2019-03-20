@@ -3,8 +3,8 @@ from sklearn.model_selection import train_test_split
 from fit_predict import fit_predict
 
 
-eng = pd.read_csv("/Users/otaviolemos/eclipse-workspace/java-parser/github-550_metric_output/mlcc_input.file")
-noneng = pd.read_csv("/Users/otaviolemos/eclipse-workspace/java-parser/github-550-ne_metric_output/mlcc_input.file")
+eng = pd.read_csv("/Users/otaviolemos/Dropbox/academic/projects/eng-vs-noneng/results/metrics-data/github-550-eng/mlcc_input.file")
+noneng = pd.read_csv("/Users/otaviolemos/Dropbox/academic/projects/eng-vs-noneng/results/metrics-data/github-10k-noneng/mlcc_input.file")
 
 eng['engineered'] = 1
 noneng['engineered'] = 0

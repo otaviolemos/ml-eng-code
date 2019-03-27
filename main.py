@@ -9,6 +9,23 @@ noneng = pd.read_csv("/Users/otaviolemos/Dropbox/academic/projects/eng-vs-noneng
 eng['engineered'] = 1
 noneng['engineered'] = 0
 
+eng.drop('EMC', axis=1, inplace=True)
+eng.drop('EXH', axis=1, inplace=True)
+eng.drop('UNAND', axis=1, inplace=True)
+eng.drop('UNPOR', axis=1, inplace=True)
+eng.drop('HEFF', axis=1, inplace=True)
+eng.drop('HVOL', axis=1, inplace=True)
+eng.drop('name', axis=1, inplace=True)
+eng.drop('path', axis=1, inplace=True)
+
+noneng.drop('EXH', axis=1, inplace=True)
+noneng.drop('UNAND', axis=1, inplace=True)
+noneng.drop('UNPOR', axis=1, inplace=True)
+noneng.drop('HEFF', axis=1, inplace=True)
+noneng.drop('HVOL', axis=1, inplace=True)
+noneng.drop('name', axis=1, inplace=True)
+noneng.drop('path', axis=1, inplace=True)
+
 noneng = noneng[noneng.SLOC > 2] #se quiser utilizar somente métodos com SLOC > 2
 eng = eng[eng.SLOC > 2]
 

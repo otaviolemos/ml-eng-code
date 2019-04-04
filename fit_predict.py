@@ -1,6 +1,7 @@
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn import svm
+from xgboost import XGBClassifier
 import sklearn.metrics as metrics
 
 
@@ -11,6 +12,8 @@ def fit_predict(algo, X_train, y_train, X_test, y_test):
         clf = svm.SVC()
     elif algo == 'ABC':
         clf = AdaBoostClassifier();
+    elif algo == 'XGB':
+        clf = XGBClassifier();
     else:
         print("Algorithm not recognized.")
         return
